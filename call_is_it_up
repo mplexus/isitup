@@ -1,0 +1,6 @@
+#!/bin/bash
+php index.php > output.log
+if [ $? != 0 ]
+then echo "FATAL ERROR: " $(cat output.log)
+else echo "SUCCESS"
+fi
